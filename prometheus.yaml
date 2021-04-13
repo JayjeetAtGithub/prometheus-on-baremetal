@@ -1,0 +1,16 @@
+global:
+  scrape_interval: 15s
+
+scrape_configs:
+- job_name: node
+  static_configs:
+  - targets: [
+    'ms0808.utah.cloudlab.us',
+    'ms1238.utah.cloudlab.us',
+    'ms1235.utah.cloudlab.us',
+    'ms1242.utah.cloudlab.us',
+    'ms1226.utah.cloudlab.us',
+    'ms1240.utah.cloudlab.us',
+    'ms1217.utah.cloudlab.us',
+    'ms1345.utah.cloudlab.us'
+  ]
