@@ -5,12 +5,12 @@ scrape_configs:
 - job_name: node
   static_configs:
   - targets: [
-    'ms0808.utah.cloudlab.us',
-    'ms1238.utah.cloudlab.us',
-    'ms1235.utah.cloudlab.us',
-    'ms1242.utah.cloudlab.us',
-    'ms1226.utah.cloudlab.us',
-    'ms1240.utah.cloudlab.us',
-    'ms1217.utah.cloudlab.us',
-    'ms1345.utah.cloudlab.us'
+    'ms1242.utah.cloudlab.us:9100',
+    'ms1226.utah.cloudlab.us:9100',
+    'ms1240.utah.cloudlab.us:9100',
+    'ms1217.utah.cloudlab.us:9100',
+    'ms1204.utah.cloudlab.us:9100',
+    'ms1244.utah.cloudlab.us:9100',
+    'ms1327.utah.cloudlab.us:9100',
+    'ms1202.utah.cloudlab.us:9100'
   ]
