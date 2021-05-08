@@ -2,12 +2,12 @@
 
 1) To start getting metrics from a set of nodes, execute this on every node
 ```
-curl -o- https://raw.githubusercontent.com/JayjeetAtGithub/prometheus-on-baremetal/master/start.sh | bash
+curl -o- https://raw.githubusercontent.com/JayjeetAtGithub/prometheus-on-baremetal/master/exporter.sh | bash
 ```
 
 2) To start prometheus,
 ```
-nohup ./prometheus --config.file=config.yml &
+curl -o- https://raw.githubusercontent.com/JayjeetAtGithub/prometheus-on-baremetal/master/prometheus.sh | bash
 ```
 
 3) To start Grafana,
