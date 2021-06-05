@@ -1,11 +1,13 @@
 global:
   scrape_interval: 15s
 scrape_configs:
-- job_name: node
+- job_name: client
   static_configs:
   - targets:
-    - node0:9100
-    - node1:9100
-    - node2:9100
-    - node3:9100
-    - node4:9100
+    - client:9100
+- job_name: storage
+  static_configs:
+  - targets:
+    - storage1:9100
+    - storage2:9100
+    - storage3:9100
