@@ -552,7 +552,7 @@
       "targets": [
         {
           "exemplar": true,
-          "expr": "rate(node_network_receive_bytes_total{device=\"eno1d1\",job=\"client\"}[15s])/(1024*1024)",
+          "expr": "rate(node_network_receive_bytes_total{device=\"eno1d1\",job=\"client\"}[15s])",
           "interval": "",
           "legendFormat": "",
           "queryType": "randomWalk",
@@ -580,7 +580,7 @@
       "yaxes": [
         {
           "$$hashKey": "object:148",
-          "format": "MBs",
+          "format": "Bps",
           "label": null,
           "logBase": 1,
           "max": null,
@@ -649,7 +649,7 @@
       "targets": [
         {
           "exemplar": true,
-          "expr": "rate(node_network_transmit_bytes_total{device=\"eno1d1\",job=\"storage\"}[15s])/(1024*1024)",
+          "expr": "rate(node_network_transmit_bytes_total{device=\"eno1d1\",job=\"storage\"}[15s])",
           "interval": "",
           "legendFormat": "",
           "queryType": "randomWalk",
@@ -677,7 +677,7 @@
       "yaxes": [
         {
           "$$hashKey": "object:148",
-          "format": "MBs",
+          "format": "Bps",
           "label": null,
           "logBase": 1,
           "max": null,
@@ -740,5 +740,5 @@
   "timezone": "",
   "title": "Skyhook-NSDI-Experiments",
   "uid": "lxKiCIXMknsdi",
-  "version": 46
+  "version": 50
 }
