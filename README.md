@@ -7,6 +7,8 @@ curl -o- https://raw.githubusercontent.com/JayjeetAtGithub/prometheus-on-baremet
 
 2) Write the host names in the `hosts` file and generate the prometheus config file in `/tmp` by doing,
 ```bash
+git clone https://github.com/JayjeetAtGithub/prometheus-on-baremetal
+cd prometheus-on-baremetal/
 python3 get_config.py
 ```
 
@@ -17,6 +19,7 @@ curl -o- https://raw.githubusercontent.com/JayjeetAtGithub/prometheus-on-baremet
 
 3) To start Grafana server,
 ```bash
+curl -o- https://get.docker.com | bash
 docker run -d -p 3000:3000 grafana/grafana
 ```
 
