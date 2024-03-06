@@ -12,5 +12,5 @@ if __name__ == "__main__":
     data['scrape_configs'][0]['static_configs'][0]['targets'] = [hosts[0]]
     data['scrape_configs'][1]['static_configs'][0]['targets'] = hosts[1:]
 
-    with open('/tmp/config.yml', 'w') as f:
+    with open('/tmp/prometheus_config.yml', 'w') as f:
         yaml.dump(data, f, default_flow_style=False)

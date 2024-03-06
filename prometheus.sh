@@ -14,7 +14,7 @@ After=network.target
  
 [Service]
 Type=simple
-ExecStart=/usr/bin/prometheus --config.file=/tmp/config.yml
+ExecStart=/usr/bin/prometheus --config.file=/tmp/prometheus_config.yml
  
 [Install]
 WantedBy=multi-user.target
